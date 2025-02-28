@@ -49,3 +49,5 @@
 - **IDE**: IntelliJ IDEA 💻
 
 ## 트러블슈팅
+
+- [Level2](https://velog.io/@harvard--/Java-%EA%B3%84%EC%82%B0%EA%B8%B0-%EB%A7%8C%EB%93%A4%EA%B8%B0-Level2-%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81)
