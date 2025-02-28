@@ -7,23 +7,23 @@ public class Calculator {
 
     private List<Integer> results = new ArrayList<Integer>();
 
-    public int calculate(int num1, int num2, char operator) {
+    public int calculate(int firstNum, int secondNum, char operator) {
 
         int result = 0;
 
         // 계산 구간
         switch (operator) {
             case '+':
-                result = num1 + num2;
+                result = firstNum + secondNum;
                 break;
             case '-':
-                result = num1 - num2;
+                result = firstNum - secondNum;
                 break;
             case '*':
-                result = num1 * num2;
+                result = firstNum * secondNum;
                 break;
             case '/':
-                result = num1 / num2;
+                result = firstNum / secondNum;
                 break;
         }
 
