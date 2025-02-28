@@ -12,6 +12,7 @@ public class Input {
         // 필터링 구간
         System.out.print("첫 번째 숫자를 입력하세요: ");
         return filter.checkedPositiveNum();
+
     }
 
     public int addNum(char operator) {
@@ -23,6 +24,7 @@ public class Input {
             return addNum(operator);
         }
         return num;
+
     }
 
     public char addOperator() {
@@ -35,6 +37,7 @@ public class Input {
             System.out.println("사칙연산 기호가 아닙니다. 다시 입력해주세요.");
         }
         return operator;
+
     }
 
 }

@@ -12,7 +12,7 @@ public class App {
 
         int firstNum, secondNum;
         char operator;
-        boolean flag;
+        boolean flag = false;
         boolean subFlag = true;
 
         do {

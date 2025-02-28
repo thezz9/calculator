@@ -26,4 +26,5 @@ public class Filter {
             System.out.println("양수(0 포함)를 입력하세요.");
         }
     }
+
 }
