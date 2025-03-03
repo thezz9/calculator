@@ -20,7 +20,7 @@ public class Filter {
                 System.out.println("실수");
                 double num = sc.nextDouble();
                 if (num >= 0) {
-                    return(T) Double.valueOf(num);
+                    return (T) Double.valueOf(num);
                 }
             } else {
                 System.out.println("올바른 숫자를 입력하세요.");
