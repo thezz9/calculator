@@ -3,23 +3,21 @@ package level3;
 import java.util.Scanner;
 
 public class App {
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
         Input input = new Input();
+        Filter filter = new Filter();
         ArithmeticCalculator<Number> calc = new ArithmeticCalculator<>();
         Menu menu = new Menu(calc);
 
         do {
-            // 입력
+            // 입력 (검증)
             Number firstNum = input.addNum("첫 번째");
             OperatorType operator = input.addOperator();
             Number secondNum = input.addNum("두 번째");
-
-            while (operator == OperatorType.DIV && secondNum.doubleValue() == 0) {
-                    System.out.println("나눗셈 연산에서 분모(두 번째 숫자)에 0이 올 수 없습니다. 다시 입력하세요.");
-                    secondNum = input.addNum("두 번째");
-            }
+            secondNum = filter.checkedDivide(secondNum, operator);
 
             // 출력 (계산)
             double result = calc.calculate(firstNum, secondNum, operator);
@@ -29,5 +27,6 @@ public class App {
         sc.close();
 
     }
+
 }
 

@@ -13,7 +13,10 @@ public enum OperatorType {
         return operator;
     }
 
-    public static OperatorType verificationOperator(char operator) {
+    /**
+     * 잘못된 연산자 예외 처리
+     */
+    public static OperatorType verifyOperator(char operator) {
         for (OperatorType op : values()) {
             if (op.operator == operator) {
                 return op;

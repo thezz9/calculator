@@ -10,6 +10,9 @@ public class Menu {
         this.calc = calc;
     }
 
+    /**
+     * 디스플레이 메서드 - 메뉴
+     */
     public boolean display() {
         Scanner sc = new Scanner(System.in);
 
@@ -24,8 +27,8 @@ public class Menu {
                     continue;
                 case "2":
                     System.out.print("기준 값을 입력하세요: ");
-                    double value = sc.nextDouble();
-                    System.out.println("저장된 연산 결과: " + calc.filteredResult(value));
+                    double inputValue = sc.nextDouble();
+                    System.out.println("저장된 연산 결과: " + calc.filteredResult(inputValue));
                     continue;
                 case "3":
                     calc.removeResult();
